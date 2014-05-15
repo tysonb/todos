@@ -1,13 +1,16 @@
 source 'https://rubygems.org'
 
 
-group :test, :development do
-  gem 'rspec-rails'
-end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+gem 'high_voltage' #thoughtbot gem allowing easy integration for static pages
+
+group :test, :development do
+  gem 'rspec-rails'
+  gem 'capybara', '1.1.4'
+end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
