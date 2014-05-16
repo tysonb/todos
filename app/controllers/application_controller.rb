@@ -6,4 +6,9 @@ class ApplicationController < ActionController::Base
   def sign_in_as(email)
     session[:current_email] = email
   end
+
+  def current_user
+    OpenStruct.new(email: session[:current_email])
+  end
+  helper_method :current_user
 end
