@@ -11,6 +11,11 @@ group :test, :development do
   gem 'rspec-rails'
   gem 'capybara', '1.1.4'
 end
+
+group :test do
+  gem 'factory_girl_rails', '~> 4.0'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
