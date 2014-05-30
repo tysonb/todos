@@ -1,16 +1,16 @@
 require 'spec_helper'
 
-#7:14
 describe User, '#todos' do
-  it 'returns all todos' do
-    Todo.create(description: 'Buy some eggs')
+  it 'returns todos whose email is the email instantiated with' do
+    Todo.create(description: 'Buy some eggs', owner_email: 'person@example.com')
+    Todo.create(description: 'Buy some milk', owner_email: 'other_person@example.com')
     user = User.new('person@example.com')
     expect(user.todos.length).to eq 1
     expect(user.todos.first.description).to eq 'Buy some eggs' 
   end
 end
 
-describe User, '#todos' do
+describe User, '#email' do
   it 'returns the email the user was instantiated with' do
     user = User.new('person@example.com')
     expect(user.email).to eq 'person@example.com'
