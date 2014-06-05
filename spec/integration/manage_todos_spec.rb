@@ -24,9 +24,9 @@ feature 'Manage todos' do
 
     within 'li.todo' do
       click_link 'Complete'
-
-      expect(page).to have_css 'li.todo.completed'
     end
+
+    expect(page).to have_css 'li.todo.completed'
   end
 
   def create_todo_with_description(description)
