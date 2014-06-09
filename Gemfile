@@ -10,6 +10,7 @@ gem 'high_voltage' #thoughtbot gem allowing easy integration for static pages
 group :test, :development do
   gem 'rspec-rails'
   gem 'capybara', '1.1.4'
+  gem 'simplecov'
 end
 
 group :test do
