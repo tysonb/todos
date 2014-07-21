@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
     User.new(session[:current_email])
   end
   helper_method :current_user
+
+  def useless_method
+    "hi"
+  end
 end
