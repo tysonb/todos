@@ -1,4 +1,4 @@
-# 4 phase test
+# 4 phases of a test
 # 1) setup
 # 2) exercise/execute
 # 3) verify
